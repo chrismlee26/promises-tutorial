@@ -6,12 +6,11 @@ const inventory = {
 
 // Write your code below:
 
-const executorFunction = (resolve, reject) => { 
-  if (someCondition) {
-      resolve('I resolved!');
+const myExecutor = (resolve, reject) => { 
+  if (inventory.sunglasses > 0) {
+      resolve('Sunglasses order processed.');
   } else {
-      reject('I rejected!'); 
+      reject('That item is sold out.'); 
   }
 };
 
-const myFirstPromise = new Promise(executorFunction);
