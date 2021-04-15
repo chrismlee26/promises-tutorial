@@ -1,4 +1,4 @@
-const {checkInventory, processPayment, shipOrder} = require('./library.js');
+const {checkInventory, processPayment, shipOrder} = require('./part12-8-lib.js.js');
 
 const order = {
   items: [['sunglasses', 1], ['bags', 2]],
